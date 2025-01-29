@@ -15,6 +15,6 @@ client.on('connect', () => {
             return;
         }
         console.log('send message!');
-        client.publish(TOPIC, JSON.stringify({msg: "Hello MQTT slicequeue channel!"}))
+        client.publish(TOPIC, JSON.stringify({msg: "Hello MQTT slicequeue channel!"}));
     }); //topic 구독
 });
